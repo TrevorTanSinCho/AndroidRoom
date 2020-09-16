@@ -10,7 +10,7 @@ class BookViewModel(application: Application) : AndroidViewModel(application){
 
     init {
         val bookDb = BookRoomDatabase.getDatabase(application)
-        bookDao = bookDb!!.bookDap()
+        bookDao = bookDb!!.bookDao()
     }
 
     fun insert(book: Book){

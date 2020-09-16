@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Book::class], version = 1)
 abstract class BookRoomDatabase: RoomDatabase() {
 
-    abstract fun bookDap(): BookDao
+    abstract fun bookDao(): BookDao
 
     companion object{
         private var bookRoomInstane: BookRoomDatabase? = null
